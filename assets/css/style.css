@@ -1,33 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Farro&family=Lato:wght@300&family=Marcellus&family=Vollkorn&display=swap');
 
 
-body{
-    background:url("../images/background-iamge.jpg") no-repeat center center fixed;
+body {
+    background: url("../images/background-iamge.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
 .hide {
     display: none;
 }
+
 .heading-container {
     border-radius: 10px;
     box-shadow: 0 0 10px;
-     background-color: rgb(85, 60, 35, .9);
+    background-color: rgb(85, 60, 35, .9);
     margin: 0 auto;
     margin-bottom: 75px;
     margin-top: 75px;
     width: 85vw;
 }
+
 h1 {
     font-family: farro;
     font-size: 75px;
     color: rgb(106, 194, 105);
 }
+
 .heading {
     height: auto;
     text-align: center;
     padding: 25px;
     margin-bottom: 50px;
 }
+
 .outer-container {
     width: 85vw;
     height: 81vh;
@@ -41,6 +46,7 @@ h1 {
     box-shadow: 0 0 10px;
     position: relative;
 }
+
 #start {
     font-family: farro;
     font-size: 1.5em;
@@ -57,10 +63,12 @@ h1 {
     top: 50px;
     color: rgb(112, 60, 179);
 }
+
 #start:hover {
     border: 3px solid rgb(106, 194, 105);
     color: rgb(106, 194, 105);
 }
+
 .question-area {
     height: 120px;
     width: 90%;
@@ -78,16 +86,19 @@ h1 {
     background-color: rgb(106, 194, 105);
     position: relative;
 }
+
 #question-text {
     font-family: farro;
     font-size: 20px;
     text-align: center;
 }
+
 .answer-area {
     width: 50%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
 .choice {
     cursor: pointer;
     width: 100%;
@@ -102,10 +113,12 @@ h1 {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
 .choice:hover {
     border: 3px solid rgb(106, 194, 105);
     color: rgb(106, 194, 105);
 }
+
 #timer {
     position: relative;
     height: auto;
@@ -114,6 +127,7 @@ h1 {
     margin: 0 auto;
     margin-bottom: 25px;
 }
+
 #btimeGauge {
     width: 300px;
     height: 10px;
@@ -122,12 +136,14 @@ h1 {
     margin: 0 auto;
     margin-top: -10px;
 }
+
 #timeGauge {
     height: 10px;
     border-radius: 10px;
     background-color: rgb(112, 60, 179);
-     margin-top: -10px;
+    margin-top: -10px;
 }
+
 #progress {
     width: 75%;
     margin: 0 auto;
@@ -136,6 +152,7 @@ h1 {
     padding: 5px;
     text-align: center;
 }
+
 .prog {
     width: 20px;
     height: 20px;
@@ -145,17 +162,28 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 #scoreContainer p {
     font-family: farro;
-    position: relative;
+    text-align: center;
     color: rgb(112, 60, 179);
-    width: 50%; 
+    width: 50%;
     margin: 0 auto;
     height: 59px;
     top: 130px;
     left: 325px;
     font-size: 1.5em;
     font-weight: bold;
+    padding-top: 100px;
+}
+
+/* media queries - screens  up to 1300 width */
+
+@media screen and (max-width: 1300px) {
+    .heading-container {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
 }
 
 /* media queries - screens  up to 1000 width */
@@ -165,15 +193,18 @@ h1 {
     h1 {
         font-size: 50px;
     }
+
     .prog {
         width: 10px;
         height: 10px;
     }
+
     #question-text {
         font-size: 15px;
         text-align: center;
         vertical-align: middle;
     }
+
     .choice {
         font-size: 15px;
     }
@@ -186,4 +217,17 @@ h1 {
     h1 {
         font-size: 30px;
     }
-}
+    .heading-container {
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+    #question-text {
+        font-size: 10px;
+    }
+    .choice {
+        font-size: 10px;
+    }
+    .outer-container {
+        height: 100vh;
+    }
+ }
