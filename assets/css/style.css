@@ -1,215 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Farro&family=Lato:wght@300&family=Marcellus&family=Vollkorn&display=swap');
 
-.heading-container{
+
+body{
+    background:url("../images/background-iamge.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.hide {
+    display: none;
+}
+.heading-container {
     border-radius: 10px;
     box-shadow: 0 0 10px;
-    box-shadow:   rgb(106, 194, 105);
-    background-color: rgb(85, 60, 35, .9);
+     background-color: rgb(85, 60, 35, .9);
     margin: 0 auto;
     margin-bottom: 75px;
     margin-top: 75px;
     width: 85vw;
-    position: relative;
-    
 }
-
-h1{
+h1 {
     font-family: farro;
     font-size: 75px;
     color: rgb(106, 194, 105);
 }
-
-.heading{
-    
+.heading {
     height: auto;
     text-align: center;
     padding: 25px;
-    margin-bottom:50px: 
-    
-    
+    margin-bottom: 50px;
 }
-
-body{
-    font-size: 20px;
-    font-family: monospace;
-}
-
-/*
-.game-area-container{
+.outer-container {
     width: 85vw;
     height: 81vh;
-    background-color: rgb(194, 149, 105, .9) ;
+    background-color: rgb(194, 149, 105, .9);
     box-sizing: border-box;
-    max-height: 550px;
+    max-height: 650px;
     max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 1%;
     border-radius: 10px;
     box-shadow: 0 0 10px;
-*/
-#container{
-    
-        width: 85vw;
-        height: 81vh;
-        background-color: rgb(194, 149, 105, .9) ;
-        box-sizing: border-box;
-        max-height: 650px;
-        max-width: 950px;
-        margin:0 auto;
-        padding: 1%;
-        border-radius: 10px;
-        box-shadow: 0 0 10px;
-        position: relative;
-       
-    }
-   
-
-#start{
+    position: relative;
+}
+#start {
+    font-family: farro;
     font-size: 1.5em;
     font-weight: bolder;
-    word-break: break-all;
-    width:25%;
+    width: 25%;
     padding: 25px;
-    border : 2px solid lightgrey;
     text-align: center;
-    
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
     cursor: pointer;
-    
     margin: 0 auto;
     margin-top: auto;
     margin-bottom: auto;
-    top:50px;
-    color : lightgrey;
+    top: 50px;
+    color: rgb(112, 60, 179);
 }
-#start:hover{
+#start:hover {
     border: 3px solid rgb(106, 194, 105);
-    color : rgb(106, 194, 105);
+    color: rgb(106, 194, 105);
 }
-
-
-
-.question-area{
+.question-area {
     height: 120px;
-    font-family: farro;
-    font-size: 20px;
     width: 90%;
     box-sizing: border-box;
     margin: 0 auto;
     margin-top: 33px;
     border-radius: 10px;
     box-shadow: 0 0 10px;
-   text-align: center;
-   line-height: 25px;
-    padding-top:  15px;
+    line-height: 25px;
+    padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 7px;
     padding-right: 7px;
     margin-bottom: 50px;
     background-color: rgb(106, 194, 105);
+    position: relative;
 }
-
-.answer-area{
-    width:50%;
-    margin: 0 auto;
-    box-shadow: 0 0 2px;
-}
-.choice{
-     cursor: pointer;
-     width: 100%;
-     margin: 0 auto;
-     box-sizing: border-box;
-     font-family: farro;
-     font-size: 20px;
-     
-     padding: 1%;
-     border-radius: 10px;
-     box-shadow: 0 0 10px;
-     margin-bottom: 25px;
-     padding-top:  15px;
-     padding-bottom: 15px;
-}
-.choice:hover{
-    border: 3px solid rgb(106, 194, 105);
-    color : rgb(106, 194, 105);
-}
-
-#timer{
-    position: absolute;
-    box-shadow: 0 0 2px;
-    height : 100px;
-    width : 300px;
-    bottom : 0px;
+#question-text {
+    font-family: farro;
+    font-size: 20px;
     text-align: center;
-    margin:0 auto;
-    
 }
-#counter{
-    font-size: 3em;
+.answer-area {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
-#btimeGauge{
-    width : 300px;
-    height : 10px;
+.choice {
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: farro;
+    font-size: 20px;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.choice:hover {
+    border: 3px solid rgb(106, 194, 105);
+    color: rgb(106, 194, 105);
+}
+#timer {
+    position: relative;
+    height: auto;
+    width: 300px;
+    bottom: 0px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+#btimeGauge {
+    width: 300px;
+    height: 10px;
     border-radius: 10px;
     background-color: lightgray;
-    margin-left : 25px;
-}
-#timeGauge{
-    height : 10px;
-    border-radius: 10px;
-    background-color: mediumseagreen;
-    margin-top : -10px;
-    margin-left : 25px;
-}
-#progress{
-    width : 75%;
     margin: 0 auto;
-    bottom : 0px;
-    right : 0px;
-    padding:5px;
-    text-align: center;
-
-    box-shadow: 0 0 2px;
-    
+    margin-top: -10px;
 }
-
-
-.prog{
-    width : 25px;
-    height : 25px;
-    border: 2.5px solid rgb(85, 60, 35, .9);ue;
+#timeGauge {
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(112, 60, 179);
+     margin-top: -10px;
+}
+#progress {
+    width: 75%;
+    margin: 0 auto;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    text-align: center;
+}
+.prog {
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid rgb(85, 60, 35, .9);
     display: inline-block;
     border-radius: 75%;
-    margin-left : 10px;
-    margin-right : 10px;
-    
+    margin-left: 10px;
+    margin-right: 10px;
 }
-#scoreContainer{
-    margin : 20px auto;
-    background-color: white;
-    opacity: 0.8;
-    height: 300px;
-    width : 700px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
+#scoreContainer p {
+    font-family: farro;
     position: relative;
-    display: none;
-}
-#scoreContainer img{
-    position: absolute;
-    top:100px;
-    left:325px;
-}
-#scoreContainer p{
-    position: absolute;
-    display: block;
-    width : 59px;
-    height :59px;
-    top:130px;
-    left:325px;
+    color: rgb(112, 60, 179);
+    width: 50%; 
+    margin: 0 auto;
+    height: 59px;
+    top: 130px;
+    left: 325px;
     font-size: 1.5em;
     font-weight: bold;
-    text-align: center;
 }
 
+/* media queries - screens  up to 1000 width */
 
+@media screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: 50px;
+    }
+    .prog {
+        width: 10px;
+        height: 10px;
+    }
+    #question-text {
+        font-size: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .choice {
+        font-size: 15px;
+    }
+}
+
+/* media queries - screens  up to 500 width */
+
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 30px;
+    }
+}
